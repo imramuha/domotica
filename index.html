@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="assets/css/app.css">
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-database.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+
+    <title>Domotica</title>
+</head>
+
+<body>
+
+    
+
+    <div class="loginform">
+        <h1>Domotica</h1>
+        <div id="firebaseui-auth-container"></div>
+        <div id="loader">Loading...</div>
+
+        <div>
+            <h3>Test user</h3>
+            <p>Email: <strong>imran@domotica.com</strong></p>
+            <p>Password: <strong>domotica123</strong></p>
+        </div>
+    </div>
+
+
+    <div class="dashboard">
+        <div class="screenContainer">
+            <h1>Domotica</h1>
+            <div class="container">
+                
+            </div>
+
+            <h3>Temperature & humidity</h3>
+            <div class="roomState"></div>
+        </div>
+
+        <div class="uiContainer">
+            <h3>Control your room</h3>
+            <hr>
+            <button class="lamps">Lights</button>
+            <button class="outlets">Outlets</button>
+            <button class="frontdoor">Frontdoor</button>
+            <button class="backdoor">Backdoor</button>
+            <button class="alert">Alert!</button>
+            <hr>
+            <button class="logout">Logout</button>
+        </div>
+    </div>
+
+    <script src="assets/js/firebaseConfig.js"></script>
+    <script src="assets/js/firebaseAuth.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
